@@ -1,9 +1,13 @@
-suppressMessages(library(tidyverse))
-data('Orange')
-somefunction <- function(data) {
+somefunction <- function(data, operation) {
   data <- data.frame(data)
-  average_age <- mean(data$age)
-  return(average_age)
+  if (operation == 1) {
+    result <- mean(data$age)
+  } else if (operation == 2) {
+    result <- sum(data$age)
+  } else {
+    result <- NULL
+  }
+  return(result)
 }
 
-somefunction(Orange)
+#this adds the argument "operation"
