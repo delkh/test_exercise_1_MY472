@@ -10,3 +10,4 @@ somefunction <- function(data, operation) {
   return(result)
 }
 
+#this adds the argument "operation"
