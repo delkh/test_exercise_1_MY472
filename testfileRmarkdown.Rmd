@@ -1,3 +1,11 @@
+---
+title: "testmarkdown"
+output: html_document
+date: "2023-10-25"
+---
+The examples below will demonstrate the functionality of the second argument. 
+
+```{r }
 somefunction <- function(data, operation) {
   data <- data.frame(data)
   if (operation == 1) {
@@ -9,4 +17,8 @@ somefunction <- function(data, operation) {
   }
   return(result)
 }
+
+print(somefunction(Orange, 1))
+print(somefunction(Orange, 2))
+```
 
